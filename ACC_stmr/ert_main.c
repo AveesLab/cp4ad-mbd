@@ -83,7 +83,9 @@ static void handler_100ms(int sig, siginfo_t *si, void *uc)
 
     rt_OneStep();
     printf("%4d: %f ", c++ * 10,ACCsystem_DW.DiscreteTimeIntegrator_DSTATE);
+    rt_OneStep();
     printf("-> %f ",  ACCsystem_B.DiscreteTimeIntegrator);
+    rt_OneStep();
     printf("-> %f \n", ACCsystem_DW.RateTransition1_Buffer0);
   
   return;
