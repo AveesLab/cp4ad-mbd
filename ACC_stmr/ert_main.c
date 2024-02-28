@@ -83,14 +83,39 @@ static void handler_100ms(int sig, siginfo_t *si, void *uc)
 
     rt_OneStep();
     printf("%4d: %f ", c++ * 10,ACCsystem_DW.DiscreteTimeIntegrator_DSTATE);
-    rt_OneStep();
-    printf("-> %f ",  ACCsystem_B.DiscreteTimeIntegrator);
-    rt_OneStep();
-    printf("-> %f \n", ACCsystem_DW.RateTransition1_Buffer0);
+
   
   return;
 }
+static void handler_200ms(int sig, siginfo_t *si, void *uc)
+{
 
+  if (*(timer_t *)(si->si_value.sival_ptr) != timer_200ms || sig != SIGRTMIN)
+  {
+    printf("Wrong handler\n");
+    return;
+  }
+
+    rt_OneStep();
+    printf("        -> %f ",  ACCsystem_B.DiscreteTimeIntegrator);
+
+  
+  return;
+}
+static void handler_400ms(int sig, siginfo_t *si, void *uc)
+{
+
+  if (*(timer_t *)(si->si_value.sival_ptr) != timer_400ms || sig != SIGRTMIN)
+  {
+    printf("Wrong handler\n");
+    return;
+  }
+
+    rt_OneStep();
+    printf("              -> %f \n", ACCsystem_DW.RateTransition1_Buffer0);
+  
+  return;
+}
 static int register_handler(timer_t *timer,
                             int signo,
                             int sec, int msec,   /* time to first */
