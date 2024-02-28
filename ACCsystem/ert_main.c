@@ -87,7 +87,7 @@ static void handler_100ms(int sig, siginfo_t *si, void *uc)
   }
 
     rt_OneStep();
-    printf("%4d: %f -> %f -> %f \n", c++ * 10, ACCsystem_B.DiscreteTimeIntegrator,ACCsystem_DW.DiscreteTimeIntegrator_DSTATE,ACCsystem_B.CTGACC);
+    printf("%4d: %f -> %f -> %f \n", c++ * 10,ACCsystem_DW.DiscreteTimeIntegrator_DSTATE, ACCsystem_B.DiscreteTimeIntegrator,Min);
 
   return;
 }
