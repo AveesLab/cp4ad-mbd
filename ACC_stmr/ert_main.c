@@ -20,7 +20,13 @@
 #include <stddef.h>
 #include <stdio.h>            /* This example main program uses printf/fflush */
 #include "ACCsystem.h"                 /* Model header file */
+#include <string.h>
+#include <signal.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <time.h>
 
+static timer_t timer_100ms;
 /*
  * Associating rt_OneStep with a real-time clock or interrupt service routine
  * is what makes the generated code "real-time".  The function rt_OneStep is
@@ -64,6 +70,56 @@ void rt_OneStep(void)
   /* Enable interrupts here */
 }
 
+
+static void handler_100ms(int sig, siginfo_t *si, void *uc)
+{
+  static int c = 0;
+
+  if (*(timer_t *)(si->si_value.sival_ptr) != timer_100ms || sig != SIGRTMIN)
+  {
+    printf("Wrong handler\n");
+    return;
+  }
+
+    rt_OneStep();
+    printf("%4d: %f -> %f -> %f \n", c++ * 10,ACCsystem_DW.DiscreteTimeIntegrator_DSTATE, ACCsystem_B.DiscreteTimeIntegrator,ACCsystem_B.Min);
+
+  return;
+}
+
+static int register_handler(timer_t *timer,
+                            int signo,
+                            int sec, int msec,   /* time to first */
+                            int isec, int imsec, /* periodic interval */
+                            void (*handler)(int, siginfo_t *, void *))
+{
+  struct sigevent se;
+  struct itimerspec its;
+  struct sigaction sa;
+
+  /* Set up signal handler. */
+  sa.sa_flags = SA_SIGINFO;
+  sa.sa_sigaction = handler;
+  sigemptyset(&sa.sa_mask);
+  if (sigaction(signo, &sa, NULL) == -1)
+  {
+    perror("sigaction");
+  }
+
+  /* Set and enable alarm */
+  se.sigev_notify = SIGEV_SIGNAL;
+  se.sigev_signo = signo;
+  se.sigev_value.sival_ptr = timer;
+  timer_create(CLOCK_REALTIME, &se, timer);
+
+  its.it_value.tv_sec = sec;
+  its.it_value.tv_nsec = msec * 1000000;
+  its.it_interval.tv_sec = isec;
+  its.it_interval.tv_nsec = imsec * 1000000;
+  timer_settime(*timer, 0, &its, NULL);
+
+  return 0;
+}
 /*
  * The example main function illustrates what is required by your
  * application code to initialize, execute, and terminate the generated code.
