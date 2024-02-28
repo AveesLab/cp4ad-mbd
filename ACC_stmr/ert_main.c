@@ -26,7 +26,7 @@
 #include <unistd.h>
 #include <time.h>
 
-static timer_t timer_100ms;
+static timer_t timer_100ms,timer_200ms,timer_400ms;
 /*
  * Associating rt_OneStep with a real-time clock or interrupt service routine
  * is what makes the generated code "real-time".  The function rt_OneStep is
