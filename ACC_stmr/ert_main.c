@@ -138,7 +138,11 @@ int_T main(int_T argc, const char *argv[])
 
   /* Initialize model */
   ACCsystem_initialize();
-  register_handler(&timer_100ms, SIGRTMIN, 1, 0, 0, 100, &handler_100ms);
+  register_handler(&timer_100ms, SIGRTMIN, 1, 0, 0, 100, &handler_100ms); // 100ms
+  usleep(1000);
+  register_handler(&timer_200ms, SIGRTMIN + 1, 1, 0, 0, 200, &handler_200ms); // 200ms
+  usleep(1000);
+  register_handler(&timer_400ms, SIGRTMIN + 2, 1, 0, 0, 400, &handler_400ms); // 400ms
   printf("System runs...\n");
   /* Attach rt_OneStep to a timer or interrupt service routine with
    * period 0.1 seconds (base rate of the model) here.
