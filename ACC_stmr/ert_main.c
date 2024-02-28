@@ -134,16 +134,15 @@ int_T main(int_T argc, const char *argv[])
 
   /* Initialize model */
   ACCsystem_initialize();
-
+  register_handler(&timer_100ms, SIGRTMIN, 1, 0, 0, 100, &handler_100ms);
+  printf("System runs...\n");
   /* Attach rt_OneStep to a timer or interrupt service routine with
    * period 0.1 seconds (base rate of the model) here.
    * The call syntax for rt_OneStep is
    *
    *  rt_OneStep();
    */
-  printf("Warning: The simulation will run forever. "
-         "Generated ERT main won't simulate model step behavior. "
-         "To change this behavior select the 'MAT-file logging' option.\n");
+ 
   fflush((NULL));
   while (rtmGetErrorStatus(ACCsystem_M) == (NULL)) {
     /*  Perform application tasks here */
