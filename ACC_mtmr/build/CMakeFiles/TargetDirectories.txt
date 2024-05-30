@@ -1,3 +1,0 @@
-/mnt/c/cp4ad-mbd/final/AdapticeCruiseControl/ACC_mtmr/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/cp4ad-mbd/final/AdapticeCruiseControl/ACC_mtmr/build/CMakeFiles/edit_cache.dir
-/mnt/c/cp4ad-mbd/final/AdapticeCruiseControl/ACC_mtmr/build/CMakeFiles/run.dir
