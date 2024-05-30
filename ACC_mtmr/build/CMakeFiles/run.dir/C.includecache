@@ -1,0 +1,98 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/ACC.c
+ACC.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/ACC.h
+math.h
+-
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/ACC.h
+rtwtypes.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtwtypes.h
+rtw_continuous.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_continuous.h
+rtw_solver.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_solver.h
+ACC_types.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/ACC_types.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/ACC_types.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Ego.c
+Ego.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Ego.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Ego.h
+rtwtypes.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtwtypes.h
+rtw_continuous.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_continuous.h
+rtw_solver.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_solver.h
+Ego_types.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Ego_types.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Ego_types.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Lead.c
+Lead.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Lead.h
+math.h
+-
+rtwtypes.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtwtypes.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Lead.h
+rtwtypes.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtwtypes.h
+rtw_continuous.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_continuous.h
+rtw_solver.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_solver.h
+Lead_types.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Lead_types.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Lead_types.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/ert_main.c
+stddef.h
+-
+stdio.h
+-
+ACC.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/ACC.h
+Lead.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Lead.h
+Ego.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/Ego.h
+rtwtypes.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtwtypes.h
+string.h
+-
+signal.h
+-
+sys/time.h
+-
+unistd.h
+-
+time.h
+-
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_continuous.h
+tmwtypes.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/tmwtypes.h
+rtwtypes.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtwtypes.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_solver.h
+rtw_continuous.h
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtw_continuous.h
+
+/mnt/c/Users/avees/OneDrive - KookminUNIV/바탕 화면/AdapticeCruiseControl/cp4ad-mbd/ACC_mtmr/rtwtypes.h
+

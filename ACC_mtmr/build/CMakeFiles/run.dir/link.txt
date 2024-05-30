@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/run.dir/ert_main.c.o CMakeFiles/run.dir/ACC.c.o CMakeFiles/run.dir/Ego.c.o CMakeFiles/run.dir/Lead.c.o  -o run  -lm -lrt 
