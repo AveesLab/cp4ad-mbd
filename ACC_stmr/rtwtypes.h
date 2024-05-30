@@ -5,11 +5,11 @@
  *
  * File: rtwtypes.h
  *
- * Code generated for Simulink model 'ACCsystem'.
+ * Code generated for Simulink model 'ACC'.
  *
- * Model version                  : 10.5
+ * Model version                  : 10.3
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Wed Feb 28 18:33:38 2024
+ * C/C++ source code generated on : Fri Mar  8 11:17:45 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)

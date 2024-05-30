@@ -3,13 +3,13 @@
  * course requirements at degree granting institutions only.  Not for
  * government, commercial, or other organizational use.
  *
- * File: ACCsystem_private.h
+ * File: ACC_types.h
  *
- * Code generated for Simulink model 'ACCsystem'.
+ * Code generated for Simulink model 'ACC'.
  *
- * Model version                  : 10.5
+ * Model version                  : 10.3
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Wed Feb 28 18:33:38 2024
+ * C/C++ source code generated on : Fri Mar  8 11:17:45 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -17,11 +17,13 @@
  * Validation result: Not run
  */
 
-#ifndef RTW_HEADER_ACCsystem_private_h_
-#define RTW_HEADER_ACCsystem_private_h_
-#include "rtwtypes.h"
-#include "ACCsystem_types.h"
-#endif                                 /* RTW_HEADER_ACCsystem_private_h_ */
+#ifndef RTW_HEADER_ACC_types_h_
+#define RTW_HEADER_ACC_types_h_
+
+/* Forward declaration for rtModel */
+typedef struct tag_RTM_ACC_T RT_MODEL_ACC_T;
+
+#endif                                 /* RTW_HEADER_ACC_types_h_ */
 
 /*
  * File trailer for generated code.
