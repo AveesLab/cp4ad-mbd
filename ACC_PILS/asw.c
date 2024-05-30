@@ -25,23 +25,33 @@ ISR2(TimerISR)
 
 TASK(TaskH) {
     Lead_step();
-    printfSerial(" %f", Lead_Y.s_lead);
-    ACC_U.v_lead=Lead_Y.v_lead;
-    ACC_U.In1=Lead_Y.s_lead;
+    /*        write below your code        */
+
+
+
+
+    /***************************************/
 	TerminateTask();
 };
 
 TASK(TaskM) {
     Ego_step();
-    printfSerial("        %f", Ego_Y.s_ego);
-    ACC_U.v_ego=Ego_Y.v_ego;
-    ACC_U.In2=Ego_Y.s_ego;
+    /*        write below your code        */
+
+
+
+
+    /***************************************/
 	TerminateTask();
 };
 
 TASK(TaskL) {
     ACC_step();
-    printfSerial("               %f", ACC_Y.accel);
-    Ego_U.a_ego=ACC_Y.accel;
+    /*        write below your code        */
+
+
+
+
+    /***************************************/
 	TerminateTask();
 };
